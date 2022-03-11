@@ -1,0 +1,144 @@
+
+
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-nav__link {
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+  text-decoration: none;
+  color: $alice-blue;
+  cursor: pointer;
+
+  @include mobile {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: $tangaroa;
+  }
+}
+
+.main-nav__item:not(:last-child) {
+  margin-right: 35px;
+  margin-bottom: 0;
+
+  @include mobile {
+    margin-bottom: 30px;
+  }
+}
+
+.main-nav__button-wrapper {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+}
+
+.main-nav__toggle {
+  display: none;
+
+  @include mobile {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 24px;
+    height: 12px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    z-index: 3;
+  
+    &:focus-visible {
+      outline: 2px solid $tangaroa;
+    }
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $color-default-white;
+}
+
+.main-nav--closed .main-nav__toggle::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 14px;
+  border-top: 2px solid $color-default-white;
+  border-bottom: 2px solid $color-default-white;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: $alice-blue;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+    background-color: $tangaroa;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+    background-color: $tangaroa;
+  }
+}
+
+@include mobile {
+
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: flex;
+  }
+
+  .main-nav__list {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 75px 30px 0 15px;
+    top: 0;
+    right: 0;
+    width: 285px;
+    list-style: none;
+    background-color: $alice-blue;
+    z-index: 2;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    position: static;
+  }
+}
+

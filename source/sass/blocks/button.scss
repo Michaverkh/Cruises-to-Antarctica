@@ -1,0 +1,26 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $tangaroa;
+  background-color: $color-default-white;
+  padding: 19px 0;
+  border: none;
+  outline: none;
+
+  &:hover {
+    background-color:  $color-default-white;
+  }
+
+  &:active {
+    background-color:  $color-default-white;
+  }
+}

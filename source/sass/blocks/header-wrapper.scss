@@ -1,0 +1,35 @@
+.header-wrapper {
+    background: url("../img/decorative/main-background-desktop.png") center no-repeat;
+    background-size: cover;
+    background-color: $whisper;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/decorative/main-background-desktop@2x.png") center no-repeat;
+      background-size: cover;
+      background-color: $whisper;
+    }
+
+    @include tablet {
+        background: url("../img/decorative/main-background-tablet.png") center no-repeat;
+        background-size: cover;
+        background-color: $whisper;
+    
+        @media (min-resolution: 2dppx) {
+          background: url("../img/decorative/main-background-tablet@2x.png") center no-repeat;
+          background-size: cover;
+          background-color: $whisper;
+        }
+    }
+
+    @include mobile {
+        background: url("../img/decorative/main-background-mobile.png") center no-repeat;
+        background-size: cover;
+        background-color: $whisper;
+    
+        @media (min-resolution: 2dppx) {
+          background: url("../img/decorative/main-background-mobile@2x.png") center no-repeat;
+          background-size: cover;
+          background-color: $whisper;
+        }
+    }
+}

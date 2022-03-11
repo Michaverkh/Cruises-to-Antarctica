@@ -1,0 +1,28 @@
+.centering-container {
+  min-width: 1160px;
+  margin: 0 auto;
+  padding: 0 7.5%;
+
+  @include tablet {
+    min-width: 678px;
+    padding: 0 5.86%;
+  }
+
+  @include mobile {
+    min-width: 290px;
+    padding: 0 4.68%;
+  }
+}
+
+// .centering-container {
+//   width: 288px;
+//   margin: 0 auto;
+
+//   @media (min-width: $tablet-width) {
+//     width: 726px;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     width: 1170px;
+//   }
+// }

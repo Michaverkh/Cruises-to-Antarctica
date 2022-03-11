@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-
+import {openMenu} from './modules/main-nav'
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-
+  openMenu();
   // Modules
   // ---------------------------------
 

@@ -18,10 +18,13 @@
 // Blocks
 // ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
 @import "blocks/page-body";
-
+@import "blocks/button";
+@import "blocks/centering-container";
+@import "blocks/header-bottom";
+@import "blocks/header-wrapper";
+@import "blocks/main-nav";
+@import "blocks/page-header";
 // ---------------------------------
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
