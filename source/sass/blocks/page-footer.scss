@@ -1,0 +1,30 @@
+.page-footer {
+    background-color: $tangaroa;
+}
+
+.page-footer__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.page-footer__nav-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.page-footer__img {
+    width: 70px;
+    height: 38px;
+    margin-right: 40px;
+  
+    @include tablet {
+      width: 38px;
+      height: 20px;
+    }
+  
+    @include mobile {
+      width: 42px;
+      height: 22px;
+    }
+  }

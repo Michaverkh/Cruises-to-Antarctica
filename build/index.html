@@ -23,18 +23,18 @@
             <div class="main-nav__button-wrapper">
               <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             </div>
-            <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active">
-                <a class="main-nav__link" href="#advantages">Преимущества</a>
+            <ul class="main-nav__list main-nav__list--header">
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--header" href="#advantages">Преимущества</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link" href="#directions">Направления</a>
+                <a class="main-nav__link main-nav__link--header" href="#directions">Направления</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active" href="#cruises">Ближайшие круизы</a>
+                <a class="main-nav__link main-nav__link--header" href="#cruises">Ближайшие круизы</a>
               </li>
               <li class="main-nav__item">
-                <a class="main-nav__link main-nav__link--active" href="#contacts">Контакты</a>
+                <a class="main-nav__link main-nav__link--header" href="#contacts">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -48,12 +48,55 @@
       </div>
 
       <main>
-        <section class="intro">
-
+        <section class="trip">
+          <div class="trip__wrapper centering-container">
+            <div class="trip__description">
+              <h2>Путешествие на край Земли</h2>
+              <p>
+                Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики.
+                Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов,
+                китов, морских котиков и многое другое.
+              </p>
+            </div>
+            <div class="trip__image-wrapper">
+              <picture>
+                <!-- <source type="image/webp" media="(min-width: 767px)" srcset="img/decorative/pinguins-mobile.webp, img/decorative/pinguins-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 1365px)" srcset="img/decorative/pinguins-tablet.webp, img/decorative/pinguins-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/decorative/pinguins-desktop.webp, img/decorative/pinguins-desktop@2x.webp 2x"> -->
+                <source media="(max-width: 767px)" srcset="img/decorative/pinguins-mobile.png, img/decorative/pinguins-mobile@2x.png 2x">
+                <source media="(max-width: 1365px)" srcset="img/decorative/pinguins-tablet.png, img/content/greece-tablet@2x.jpg 2x">
+                <img class="trip__image" src="img/decorative/pinguins-desktop.png" srcset="img/decorative/pinguins-desktop@2x.png 2x" width="560" height="301" alt="Пингвины">
+              </picture>
+            </div>
+          </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+      <footer class="page-footer">
+        <div class="page-footer__wrapper centering-container">
+          <div class="page-footer__nav-wrapper">
+            <a class="page-footer__logo" href="#">
+              <svg class="page-footer__img" width="70" height="38" viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M0.54211 18.0197L8.80358 7.26166L11.0637 8.42713L16.4415 0L19.7928 3.8551L21.0399 2.86887L25.872 8.78584L29.3013 4.84111L38.8875 18.0197L29.652 6.81358L28.249 11.5202L29.535 15.2407L21.2736 4.25849L21.1842 8.00563L25.872 18.0197L17.1038 2.51017L19.6369 10.8926L16.0909 2.73432L14.1424 8.15829L14.5319 4.61695L9.66076 17.3922L10.2452 12.0132L8.21887 9.86169L0.54211 18.0197Z" fill="#F9FBFD"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M41.6649 19.7024C28.5846 9.51096 8.22544 23.522 0 18.1188C9.04339 25.7756 30.1812 12.832 41.6649 19.7024Z" fill="#F9FBFD"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20.5038C31.7374 14.1941 16.4741 22.9749 8.65134 20.9415C17.128 24.9111 32.9089 16.1156 42 20.5038Z" fill="#F9FBFD"/>
+              </svg>
+            </a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#advantages">Преимущества</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#directions">Направления</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#cruises">Ближайшие круизы</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
     <script src="js/vendor.min.js"></script>

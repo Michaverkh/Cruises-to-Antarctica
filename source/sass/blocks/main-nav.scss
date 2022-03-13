@@ -6,8 +6,12 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
+
+  &.main-nav__list--header {
+    justify-content: flex-end;
+  }
 }
 
 .main-nav__link {
@@ -112,7 +116,7 @@
 
 @include mobile {
 
-  .main-nav--closed .main-nav__list {
+  .main-nav--closed .main-nav__list.main-nav__list--header {
     display: none;
   }
 
@@ -120,11 +124,11 @@
     display: flex;
   }
 
-  .main-nav__list {
+  .main-nav__list.main-nav__list--header {
     display: block;
     position: absolute;
     box-sizing: border-box;
-    padding: 75px 30px 0 15px;
+    padding: 75px 30px 75px 15px;
     top: 0;
     right: 0;
     width: 285px;
