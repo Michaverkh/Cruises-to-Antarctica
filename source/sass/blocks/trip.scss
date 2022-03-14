@@ -25,6 +25,10 @@
         padding: 0;
     }
 
+    @include mobile {
+        margin-bottom: 40px;
+    }
+
     & h2 {
         margin: 0;
         padding: 0;

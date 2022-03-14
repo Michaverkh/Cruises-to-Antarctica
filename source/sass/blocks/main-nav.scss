@@ -14,6 +14,13 @@
   }
 }
 
+.main-nav__list--footer {
+  @include mobile {
+    display: block;
+    padding: 30px 0;
+  }
+}
+
 .main-nav__link {
   display: block;
   font-size: 14px;
@@ -23,21 +30,17 @@
   text-decoration: none;
   color: $alice-blue;
   cursor: pointer;
-
-  @include mobile {
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 28px;
-    color: $tangaroa;
-  }
 }
 
 .main-nav__item:not(:last-child) {
   margin-right: 35px;
   margin-bottom: 0;
+}
+
+.main-nav__item--footer:not(:last-child) {
 
   @include mobile {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
 }
 
@@ -116,7 +119,7 @@
 
 @include mobile {
 
-  .main-nav--closed .main-nav__list.main-nav__list--header {
+  .main-nav--closed .main-nav__list--header {
     display: none;
   }
 
@@ -124,7 +127,11 @@
     display: flex;
   }
 
-  .main-nav__list.main-nav__list--header {
+  .main-nav__item--header:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .main-nav__list--header {
     display: block;
     position: absolute;
     box-sizing: border-box;
@@ -135,6 +142,13 @@
     list-style: none;
     background-color: $alice-blue;
     z-index: 2;
+  }
+
+  .main-nav__link--header {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: $tangaroa;
   }
 
   .main-nav--nojs .main-nav__toggle {

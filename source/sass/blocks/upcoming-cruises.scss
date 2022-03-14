@@ -1,0 +1,54 @@
+.upcoming-cruises {
+    box-sizing: border-box;
+    padding: 120px 0;
+    background-color: $color-default-white;
+
+    @include tablet {
+        padding: 100px 0;
+    }
+
+    @include mobile {
+        padding: 65px 0;
+    }
+
+}
+
+.upcoming-cruises__header {
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-bottom: 60px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+
+
+    @include tablet {
+        font-size: 26px;
+        line-height: 39px;
+    }
+
+    @include mobile {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 40px;
+    }
+}
+
+.upcoming-cruises__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    @include mobile {
+        display: block;
+    }
+}

@@ -24,16 +24,16 @@
               <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
             </div>
             <ul class="main-nav__list main-nav__list--header">
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--header">
                 <a class="main-nav__link main-nav__link--header" href="#advantages">Преимущества</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--header">
                 <a class="main-nav__link main-nav__link--header" href="#directions">Направления</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--header">
                 <a class="main-nav__link main-nav__link--header" href="#cruises">Ближайшие круизы</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--header">
                 <a class="main-nav__link main-nav__link--header" href="#contacts">Контакты</a>
               </li>
             </ul>
@@ -70,6 +70,50 @@
             </div>
           </div>
         </section>
+        <section class="advantages">
+          <div class="advantages__wrapper centering-container">
+            <h2 class="advantages__header">Преимущества</h2>
+            <ul class="advantages__list">
+              <li class="advantages__item advantage-item">
+                <svg class="advantage-item__icon" width="27" height="32">
+                  <use xlink:href="img/sprite_auto.svg#ship"></use>
+                </svg>
+                <h3 class="advantage-item__header">Небольшой круизный лайнер</h3>
+                <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей
+                  и даст возможность насладиться видами и природой.
+                </p>
+              </li>
+              <li class="advantages__item advantage-item">
+                <svg class="advantage-item__icon" width="33" height="19">
+                  <use xlink:href="img/sprite_auto.svg#mark"></use>
+                </svg>
+                <h3 class="advantage-item__header">Система все включено</h3>
+                <p>
+                  Все наши круизы работают по системе “Все Включено”. Великолепные блюда
+                  и безлимитный бар доступны для вас
+                  24 часа.
+                </p>
+              </li>
+              <li class="advantages__item advantage-item">
+                <svg class="advantage-item__icon" width="38" height="13">
+                  <use xlink:href="img/sprite_auto.svg#boat"></use>
+                </svg>
+                <h3 class="advantage-item__header">Экскурсионные туры на Zodiac</h3>
+                <p>
+                  Экскурсионные туры
+                  к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac 
+                  в сопровождении опытных экскурсоводов.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="upcoming-cruises"> 
+          <div class="upcoming-cruises__wrapper centering-container">
+            <h2 class="upcoming-cruises__header">Ближайшие круизы</h2>
+            <ul class="upcoming-cruises__list"></ul>
+          </div>
+        </section>
       </main>
       <footer class="page-footer">
         <div class="page-footer__wrapper centering-container">
@@ -81,20 +125,37 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M42 20.5038C31.7374 14.1941 16.4741 22.9749 8.65134 20.9415C17.128 24.9111 32.9089 16.1156 42 20.5038Z" fill="#F9FBFD"/>
               </svg>
             </a>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
+            <ul class="main-nav__list main-nav__list--footer">
+              <li class="main-nav__item main-nav__item--footer">
                 <a class="main-nav__link" href="#advantages">Преимущества</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--footer">
                 <a class="main-nav__link" href="#directions">Направления</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--footer">
                 <a class="main-nav__link" href="#cruises">Ближайшие круизы</a>
               </li>
-              <li class="main-nav__item">
+              <li class="main-nav__item main-nav__item--footer">
                 <a class="main-nav__link" href="#contacts">Контакты</a>
               </li>
             </ul>
+          </div>
+          <div class="page-footer__socials-wrapper">
+            <a class="page-footer__social-link" href="#">
+              <svg class="page-footer__icon" width="11" height="20">
+                <use xlink:href="img/sprite_auto.svg#fb"></use>
+              </svg>
+            </a>
+            <a class="page-footer__social-link" href="#">
+              <svg class="page-footer__icon" width="20" height="20">
+                <use xlink:href="img/sprite_auto.svg#inst"></use>
+              </svg>
+            </a>
+            <a class="page-footer__social-link" href="#">
+              <svg class="page-footer__icon" width="20" height="16">
+                <use xlink:href="img/sprite_auto.svg#tw"></use>
+              </svg>
+            </a>
           </div>
         </div>
       </footer>

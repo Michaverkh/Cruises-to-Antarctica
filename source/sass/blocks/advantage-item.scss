@@ -1,0 +1,33 @@
+.advantage-item {
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding: 30px;
+    background-color: $color-default-white;
+
+    &:not(:last-child) {
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+
+    & h3 {
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 27px;
+        margin-bottom: 20px;
+    }
+
+    & p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.advantage-item__icon {
+    margin-bottom: 25px;
+}

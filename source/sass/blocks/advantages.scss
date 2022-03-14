@@ -1,0 +1,78 @@
+.advantages {
+    box-sizing: border-box;
+    padding: 120px 0;
+    background: url("../img/decorative/advantages-desktop.png") center no-repeat;
+    background-size: cover;
+    background-color: $whisper;
+
+    @media (min-resolution: 2dppx) {
+      background: url("../img/decorative/advantages-desktop@2x.png") center no-repeat;
+      background-size: cover;
+      background-color: $whisper;
+    }
+
+    @include tablet {
+        padding: 100px 0;
+        background: url("../img/decorative/advantages-tablet.png") center no-repeat;
+        background-size: cover;
+        background-color: $whisper;
+    
+        @media (min-resolution: 2dppx) {
+          background: url("../img/decorative/advantages-tablet@2x.png") center no-repeat;
+          background-size: cover;
+          background-color: $whisper;
+        }
+    }
+
+    @include mobile {
+        padding: 65px 0;
+        background: url("../img/decorative/advantages-mobile.png") center no-repeat;
+        background-size: cover;
+        background-color: $whisper;
+    
+        @media (min-resolution: 2dppx) {
+          background: url("../img/decorative/advantages-mobile@2x.png") center no-repeat;
+          background-size: cover;
+          background-color: $whisper;
+        }
+    }
+}
+
+.advantages__header {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include mobile {
+        font-size: 26px;
+        line-height: 39px;
+        margin-bottom: 40px;
+    }
+
+    @include mobile {
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 40px;
+    }
+}
+
+.advantages__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+
+    @include tablet {
+        column-gap: 40px;
+    }
+
+    @include mobile {
+        display: block;
+    }
+}
