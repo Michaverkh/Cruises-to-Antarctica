@@ -111,7 +111,7 @@
         <section class="upcoming-cruises"> 
           <div class="upcoming-cruises__wrapper centering-container">
             <h2 class="upcoming-cruises__header">Ближайшие круизы</h2>
-            <ul class="upcoming-cruises__list"></ul>
+            <div class="upcoming-cruises__list"></div>
           </div>
         </section>
       </main>
@@ -160,6 +160,34 @@
         </div>
       </footer>
     </div>
+    
+    <template id="upcoming-cruises-template" style="display: none">
+      <div class="upcoming-cruises__item cruis-item"> 
+        <img class="cruis-item__image" src="img/content/astoria-desktop.png" width="260" height="386" alt="круиз">
+        <h3 class="cruis-item__header cruis-item__header--main-screen">Круиз “Астория”</h3>
+        <div class="cruis-item__description">
+          <h3 class="cruis-item__header cruis-item__header--info-screen">Круиз “Астория”</h3>
+          <div class="cruis-item__par">
+            <span class="cruis-item__par-name">Маршрут</span>
+            <span class="cruis-item__text cruis-item__text--trip">Аргентина - Фолклендские острова - Антарктида - Чили</span>
+          </div>
+          <div class="cruis-item__par-name">
+            <span class="cruis-item__name">Порт отправления</span>
+            <span class="cruis-item__text cruis-item__text--start">Буэнос-Айрес</span>
+          </div>
+          <div class="cruis-item__par-name">
+            <span class="cruis-item__name">Продолжительность</span>
+            <span class="cruis-item__text cruis-item__text--duration">20 дней</span>
+          </div>
+          <div class="cruis-item__par-name">
+            <span class="cruis-item__name">Цена</span>
+            <span class="cruis-item__text cruis-item__text--price">от 14500 $</span>
+          </div>
+          <button type="button" class="cruis-item__button button">Забронировать</button>
+        </div>
+      </div>
+    </template>
+
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
