@@ -1,0 +1,84 @@
+.form {
+    display: block;
+    box-sizing: border-box;
+    padding: 50px;
+    background-color: $tangaroa;
+}
+
+.form__header {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: $alice-blue;
+    margin-bottom: 35px;
+    
+    @include mobile {
+        text-align: center;
+    }
+}
+
+.form__field-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.form__field-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.form__field-item--checkbox {
+    position: relative;
+    padding: 0 0 0 23px;
+    margin-bottom: 30px;
+}
+
+.form__input {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-radius: none;
+    padding: 11px 16px;
+
+    &::placeholder {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+        color: $tangaroa;
+    }
+
+    &:focus,
+    &:active {
+        outline: none;
+        border: none;
+    }
+}
+
+.form__checkbox-input {
+
+}
+
+.form__checkbox-label {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    color: $alice-blue;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 0;
+        left: 0;
+        background-color: $alice-blue;
+    }
+}
+
+
+.form__checkbox-input:checked + .form__checkbox-label::before {
+    background: url("../../img/sprite/mark-form.svg") center no-repeat;
+    background-color: $alice-blue;
+}
