@@ -623,30 +623,28 @@ button,
 
 .button {
   display: block;
+  width: 100%;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 21px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
   color: #011C40;
-  background-color: #ffffff;
-  padding: 19px 0;
+  background-color: #F9FBFD;
+  padding: 14px;
   border: none;
   outline: none;
 }
 
 .button:hover {
-  background-color: #ffffff;
+  background-color: #D8D8D9;
 }
 
 .button:active {
-  background-color: #ffffff;
+  background-color: #D8D8D9;
 }
 
 .centering-container {
@@ -992,7 +990,97 @@ button,
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: -webkit-min-content;
+  -ms-grid-rows: min-content;
+  grid-template-rows: -webkit-min-content;
+  grid-template-rows: min-content;
   gap: 30px;
+}
+
+.cruis-item {
+  position: relative;
+}
+
+.cruis-item:hover .cruis-item__image-wrapper {
+  display: none;
+}
+
+.cruis-item__image-wrapper {
+  display: block;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cruis-item__header--main-screen {
+  margin: 0;
+  position: absolute;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #F9FBFD;
+  left: 35px;
+  bottom: 35px;
+}
+
+.cruis-item__description {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #011C40;
+  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  color: #F9FBFD;
+  padding: 35px 25px;
+  height: 100%;
+}
+
+.cruis-item__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.cruis-item__header--info-screen {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 25px;
+}
+
+.cruis-item__par {
+  margin-bottom: 20px;
+}
+
+.cruis-item__name {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.cruis-item__text {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #D8D8D9;
 }
 
 /* @media (hover: hover), screen and (min-width: 0\0) {
@@ -1098,6 +1186,12 @@ button,
 
   .header-bottom {
     padding: 143px 0 185px 0;
+  }
+
+  .header-bottom h1 {
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 25px;
   }
 
   .header-wrapper {
@@ -1255,6 +1349,10 @@ button,
 
   .upcoming-cruises__list {
     display: block;
+  }
+
+  .cruis-item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

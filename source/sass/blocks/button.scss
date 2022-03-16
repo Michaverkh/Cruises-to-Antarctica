@@ -1,26 +1,24 @@
 .button {
   display: block;
+  width: 100%;
   box-sizing: border-box;
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-size: 10px;
+  font-size: 14px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 21px;
   text-align: center;
-  text-transform: uppercase;
   text-decoration: none;
   color: $tangaroa;
-  background-color: $color-default-white;
-  padding: 19px 0;
+  background-color: $alice-blue;
+  padding: 14px;
   border: none;
   outline: none;
 
   &:hover {
-    background-color:  $color-default-white;
+    background-color:  $quartz;
   }
 
   &:active {
-    background-color:  $color-default-white;
+    background-color:  $quartz;
   }
 }
