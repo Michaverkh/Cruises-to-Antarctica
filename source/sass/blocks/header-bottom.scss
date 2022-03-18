@@ -1,6 +1,6 @@
 .header-bottom {
     box-sizing: border-box;
-    padding: 210px 0 283px 95px;
+    padding: 192px 0 278px 95px;
 
     @include tablet {
         padding: 235px 0 280px 0;
@@ -18,7 +18,8 @@
         font-weight: 700;
         line-height: 66px;
         color: $alice-blue;
-        margin-bottom: 30px;
+        margin-bottom: 12px;
+        letter-spacing: 0.04em;
 
         @include tablet {
             font-size: 50px;
@@ -42,86 +43,4 @@
     }
 }
 
-// .header-bottom {
-
-//   @media (min-width: $tablet-width) {
-//     padding: 60px 0 83px 0;
-//     background: url("../img/decorative/main-background-tablet.jpg") center no-repeat;
-//     background-size: cover;
-
-//     @media (min-resolution: 2dppx) {
-//       background: url("../img/decorative/main-background-tablet@2x.jpg") center no-repeat;
-//       background-size: cover;
-//     }
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     padding: 185px 0 296px 0;
-//     background: url("../img/decorative/main-background-desktop.jpg") center no-repeat;
-//     background-size: cover;
-
-//     @media (min-resolution: 2dppx) {
-//       background: url("../img/decorative/main-background-desktop@2x.jpg") center no-repeat;
-//       background-size: cover;
-//     }
-//   }
-
-//   & p {
-//     @include indent-reset;
-//     display: block;
-//     width: 288px;
-//     font-size: 16px;
-//     font-weight: 400;
-//     line-height: 27px;
-//     letter-spacing: -0.47px;
-//     color: $dark-gray;
-//     padding: 20px 0;
-//     margin: 0 auto;
-
-//     @media (min-width: $tablet-width) {
-//       width: 398px;
-//       color: $basic-background;
-//     }
-
-//     @media (min-width: $desktop-width) {
-//       margin: 0;
-//       text-align: left;
-//     }
-//   }
-
-//   & h1 {
-//     @include indent-reset;
-//     display: block;
-//     width: 288px;
-//     font-size: 24px;
-//     font-weight: 600;
-//     line-height: 36px;
-//     letter-spacing: 0px;
-//     color: $basic-background;
-//     margin: 0 auto;
-
-//     @media (min-width: $tablet-width) {
-//       width: 398px;
-//     }
-
-//     @media (min-width: $desktop-width) {
-//       width: 412px;
-//       margin: 0;
-//       text-align: left;
-//       font-size: 55px;
-//       font-weight: 600;
-//       line-height: 80px;
-//       letter-spacing: -1.1px;
-//     }
-//   }
-// }
-
-// .header-bottom__wrapper {
-//   box-sizing: border-box;
-//   @media (min-width: $desktop-width) {
-//     width: 1170px;
-//     margin: 0 auto;
-//     padding-left: 700px;
-//   }
-// }
 

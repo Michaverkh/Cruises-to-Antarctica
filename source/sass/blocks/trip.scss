@@ -19,7 +19,7 @@
 }
 
 .trip__description {
-    padding-top: 66px;
+    padding-top: 55px;
 
     @include tablet {
         padding: 0;
@@ -35,17 +35,16 @@
         font-size: 28px;
         font-weight: 600;
         line-height: 42px;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+        letter-spacing: 0.02em;
     }
 
     & p {
         margin: 0;
         padding: 0;
+        font-size: 16px;
+        line-height: 24px;
     }
-}
-
-.trip__image-wrapper {
-
 }
 
 .trip__image {
