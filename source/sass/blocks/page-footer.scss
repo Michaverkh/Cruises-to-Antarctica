@@ -10,7 +10,7 @@
     padding-bottom: 50px;
 
     @include tablet {
-      padding-top: 50px;
+      padding-top: 49px;
       padding-bottom: 50px;
     }
 
@@ -47,6 +47,7 @@
     @include tablet {
       width: 38px;
       height: 20px;
+      margin-right: 25px;
     }
   
     @include mobile {
@@ -60,6 +61,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include tablet {
+    width: 87px;
+  }
 }
 
 .page-footer__social-link {
@@ -68,4 +73,37 @@
   display: block;
   text-decoration: none;
   cursor: pointer;
+}
+
+.page-footer__icon--fb {
+  @include tablet{
+    width: 9px;
+    height: auto;
+  }
+
+  @include mobile {
+    width: 9px;
+  }
+}
+
+.page-footer__icon--inst {
+  @include tablet{
+    width: 16px;
+    height: auto;
+  }
+
+  @include mobile {
+    width: 16px;
+  }
+}
+
+.page-footer__icon--tw {
+  @include tablet{
+    width: 16px;
+    height: auto;
+  }
+
+  @include mobile {
+    width: 14px;
+  }
 }

@@ -1,9 +1,14 @@
 .advantage-item {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     display: block;
     padding: 30px 30px 26px 30px;
     background-color: $color-default-white;
+
+    @include tablet {
+        padding: 25px 18px 20px 20px;
+    }
 
     &:not(:last-child) {
         @include mobile {
@@ -20,26 +25,62 @@
         font-weight: 500;
         line-height: 27px;
         margin-bottom: 8px;
+
+        @include tablet {
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+
+        @include tablet {
+            width: 180px;
+        }
     }
 
     & p {
         margin: 0;
         padding: 0;
+
+        @include tablet {
+            font-size: 14px;
+            line-height: 19.6px;
+        }
     }
 }
 
 .advantage-item__icon {
     margin-bottom: 14px;
+
+    @include tablet {
+        margin-bottom: 15px;
+    }
+}
+
+.advantage-item__icon--ship {
+
+    @include tablet {
+        width: 22px;
+        height: auto;
+    }
 }
 
 .advantage-item__icon--mark {
     width: 38px;
     height: auto;
     padding: 4px 0 5px 0;
+
+    @include tablet {
+        width: 34px;
+        padding: 4px 0 5px 0;
+    }
 }
 
 .advantage-item__icon--boat {
     width: 45px;
     height: auto;
     padding: 7px 0 8px 0;
+
+    @include tablet {
+        width: 40px;
+        padding: 7px 0 8px 0;
+    }
 }

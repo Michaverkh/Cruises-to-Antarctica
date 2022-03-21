@@ -3,11 +3,11 @@
     padding: 192px 0 278px 95px;
 
     @include tablet {
-        padding: 235px 0 280px 0;
+        padding: 208px 0 274px 0;
     }
 
     @include mobile {
-        padding: 143px 0 185px 0;
+        padding: 115px 0 180px 0;
     }
 
     & h1 {
@@ -24,13 +24,14 @@
         @include tablet {
             font-size: 50px;
             line-height: 61px;
-            margin-bottom: 29px;
+            margin-bottom: 12px;
         }
 
         @include mobile {
+            display: block;
             font-size: 36px;
             line-height: 45px;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
         }
     }
 
@@ -40,7 +41,23 @@
         font-size: 20px;
         line-height: 24px;
         color: $alice-blue;
+
+        @include tablet {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        @include mobile {
+            display: block;
+            width: 200px;
+            font-size: 16px;
+            line-height: 22px;
+        }
     }
 }
 
-
+.header-bottom__header span {
+    @include mobile {
+        display: block;
+    }
+}

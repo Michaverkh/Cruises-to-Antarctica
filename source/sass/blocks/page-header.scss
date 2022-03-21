@@ -4,6 +4,14 @@
   align-items: center;
   padding-top: 35px;
   min-height: 61.8px;
+
+  @include tablet {
+    padding-top: 24px;
+  }
+
+  @include mobile {
+    padding-top: 6px;
+  }
 }
 
 .page-header__img {
@@ -24,6 +32,7 @@
 @include mobile {
   .page-header__img.main-nav--opened {
     position: absolute;
+    top: 20px;
     right: 228px;
     margin-left: 25px;
     z-index: 3;

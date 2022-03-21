@@ -12,7 +12,7 @@
     }
 
     @include tablet {
-        padding: 100px 0;
+        padding: 90px 0 100px 0;
         background: url("../img/decorative/form-background-tablet.png") center no-repeat;
         background-size: cover;
         background-color: $whisper;
@@ -25,7 +25,7 @@
     }
 
     @include mobile {
-        padding: 65px 0;
+        padding: 60px 0 68px 0;
         background: url("../img/decorative/form-background-mobile.png") center no-repeat;
         background-size: cover;
         background-color: $whisper;
@@ -49,27 +49,31 @@
 }
 
 .booking__description {
-    width: 493px;
+    box-sizing: border-box;
+    padding: 0 0 0 60px;
 
     @include tablet {
         margin: 0 auto;
+        padding: 0;
     }
 
     @include mobile {
-        width: 260px;
+        
     }
 
     & h2 {
+        display: block;
         margin: 0;
         padding: 0;
         font-size: 40px;
         font-weight: 700;
         line-height: 60px;
-        margin-bottom: 30px;
+        margin-bottom: 5px;
+        letter-spacing: 0.02em;
 
         @include tablet {
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom: 5px;
             font-size: 34px;
             line-height: 51px;
         }
@@ -77,6 +81,7 @@
         @include mobile {
             font-size: 24px;
             line-height: 31px;
+            margin-bottom: 15px;
         }
     }
 
@@ -87,15 +92,18 @@
         font-size: 18px;
         font-weight: 400;
         line-height: 27px;
+        width: 352px;
 
         @include tablet {
             text-align: center;
-            margin-bottom: 60px;
+            font-size: 18px;
+            margin: 0 auto 50px auto;
+            width: auto;
         }
 
-        @include tablet {
+        @include mobile {
             text-align: center;
-            margin-bottom: 60px;
+            margin: 0 auto 33px auto;
             font-size: 16px;
             line-height: 22px;
         }
@@ -104,6 +112,7 @@
 
 .booking__form {
     width: 403px;
+    margin-right: 61px;
 
     @include tablet {
         margin: 0 auto;

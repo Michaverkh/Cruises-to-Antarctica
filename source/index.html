@@ -41,7 +41,7 @@
         </header>
         <header class="header-wrapper__header-bottom header-bottom">
           <div class="header-bottom__wrapper">
-            <h1>Круизы в Антарктику</h1>
+            <h1 class="header-bottom__header">Круизы <span>в Антарктику</span></h1>
             <p>Волшебный мир айсбергов и пингвинов</p>
           </div>
         </header>
@@ -64,7 +64,7 @@
                 <source type="image/webp" media="(min-width: 1365px)" srcset="img/decorative/pinguins-tablet.webp, img/decorative/pinguins-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/decorative/pinguins-desktop.webp, img/decorative/pinguins-desktop@2x.webp 2x"> -->
                 <source media="(max-width: 767px)" srcset="img/decorative/pinguins-mobile.png, img/decorative/pinguins-mobile@2x.png 2x">
-                <source media="(max-width: 1365px)" srcset="img/decorative/pinguins-tablet.png, img/content/pinguins-tablet@2x.jpg 2x">
+                <source media="(max-width: 1365px)" srcset="img/decorative/pinguins-tablet.png, img/decorative/pinguins-tablet@2x.png 2x">
                 <img class="trip__image" src="img/decorative/pinguins-desktop.png" srcset="img/decorative/pinguins-desktop@2x.png 2x" width="560" height="301" alt="Пингвины">
               </picture>
             </div>
@@ -75,7 +75,7 @@
             <h2 class="advantages__header">Преимущества</h2>
             <ul class="advantages__list">
               <li class="advantages__item advantage-item">
-                <svg class="advantage-item__icon" width="27" height="32">
+                <svg class="advantage-item__icon advantage-item__icon--ship" width="27" height="32">
                   <use xlink:href="img/sprite_auto.svg#ship"></use>
                 </svg>
                 <h3 class="advantage-item__header">Небольшой круизный лайнер</h3>
@@ -109,7 +109,7 @@
           </div>
         </section>
         <section class="upcoming-cruises"> 
-          <div class="upcoming-cruises__wrapper centering-container">
+          <div class="upcoming-cruises__wrapper">
             <h2 class="upcoming-cruises__header">Ближайшие круизы</h2>
             <div class="upcoming-cruises__list"></div>
           </div>
@@ -119,12 +119,12 @@
             <div class="booking__description">
               <h2>Раннее бронирование</h2>
               <p>
-                Забронируйте тур за 3-6 месяцев <br>
+                Забронируйте тур за 3-6 месяцев
                 до даты выезда и сэкономьте до 50%
               </p>
             </div>
             <form class="booking__form form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
-              <legend class="form__header">Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
+              <legend class="form__header"><span>Оставьте заявку</span> и мы свяжемся с вами в ближайшее время</legend>
               <ul class="form__field-list">
                 <li class="form__field-item">
                   <label class="form__label visually-hidden" for="user-id">имя</label>
@@ -154,7 +154,7 @@
                 У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.
               </p>
               <div class="contacts__contact contacts__contact--adress">
-                <svg class="contacts__icon" width="18" height="22">
+                <svg class="contacts__icon contacts__icon--map" width="18" height="22">
                   <use xlink:href="img/sprite_auto.svg#map"></use>
                 </svg>
                 <p >
@@ -168,7 +168,7 @@
                 <a href="tel:+78002000000">8-800-200-00-00</a>
               </div>
             </div>
-            <div class="contacts__map map" id="map""></div>
+            <div class="contacts__map map" id="map-canvas"></div>
           </div>
         </section>
       </main>
@@ -199,17 +199,17 @@
           </div>
           <div class="page-footer__socials-wrapper">
             <a class="page-footer__social-link" href="#">
-              <svg class="page-footer__icon" width="11" height="20">
+              <svg class="page-footer__icon page-footer__icon--fb" width="11" height="20">
                 <use xlink:href="img/sprite_auto.svg#fb"></use>
               </svg>
             </a>
             <a class="page-footer__social-link" href="#">
-              <svg class="page-footer__icon" width="20" height="20">
+              <svg class="page-footer__icon page-footer__icon--inst" width="20" height="20">
                 <use xlink:href="img/sprite_auto.svg#inst"></use>
               </svg>
             </a>
             <a class="page-footer__social-link" href="#">
-              <svg class="page-footer__icon" width="20" height="16">
+              <svg class="page-footer__icon page-footer__icon--tw" width="20" height="16">
                 <use xlink:href="img/sprite_auto.svg#tw"></use>
               </svg>
             </a>
@@ -251,6 +251,5 @@
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNQ8Ao2VXL9mfyojl-B-sXj69k7ITAoYE"></script>
   </body>
 </html>

@@ -12,7 +12,7 @@
     }
 
     @include tablet {
-        padding: 100px 0;
+        padding: 90px 0 100px 0;
         background: url("../img/decorative/advantages-tablet.png") center no-repeat;
         background-size: cover;
         background-color: $whisper;
@@ -25,7 +25,7 @@
     }
 
     @include mobile {
-        padding: 65px 0;
+        padding: 55px 0 65px 0;
         background: url("../img/decorative/advantages-mobile.png") center no-repeat;
         background-size: cover;
         background-color: $whisper;
@@ -48,16 +48,16 @@
     margin-bottom: 50px;
     letter-spacing: 0.02em;
 
-    @include mobile {
+    @include tablet {
         font-size: 26px;
         line-height: 39px;
-        margin-bottom: 40px;
+        margin-bottom: 49px;
     }
 
     @include mobile {
         font-size: 24px;
         line-height: 36px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 }
 
@@ -70,7 +70,7 @@
     column-gap: 40px;
 
     @include tablet {
-        column-gap: 40px;
+        column-gap: 30px;
     }
 
     @include mobile {
