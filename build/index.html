@@ -60,12 +60,10 @@
             </div>
             <div class="trip__image-wrapper">
               <picture>
-                <!-- <source type="image/webp" media="(min-width: 767px)" srcset="img/decorative/pinguins-mobile.webp, img/decorative/pinguins-mobile@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 767px)" srcset="img/decorative/pinguins-mobile.webp, img/decorative/pinguins-mobile@2x.webp 2x">
                 <source type="image/webp" media="(min-width: 1365px)" srcset="img/decorative/pinguins-tablet.webp, img/decorative/pinguins-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/decorative/pinguins-desktop.webp, img/decorative/pinguins-desktop@2x.webp 2x"> -->
-                <source media="(max-width: 767px)" srcset="img/decorative/pinguins-mobile.png, img/decorative/pinguins-mobile@2x.png 2x">
-                <source media="(max-width: 1365px)" srcset="img/decorative/pinguins-tablet.png, img/decorative/pinguins-tablet@2x.png 2x">
-                <img class="trip__image" src="img/decorative/pinguins-desktop.png" srcset="img/decorative/pinguins-desktop@2x.png 2x" width="560" height="301" alt="Пингвины">
+                <source type="image/webp" srcset="img/decorative/pinguins-desktop.webp, img/decorative/pinguins-desktop@2x.webp 2x">
+                <img class="trip__image" src="img/decorative/pinguins-desktop.png" width="560" height="301" alt="Пингвины">
               </picture>
             </div>
           </div>
@@ -111,7 +109,7 @@
         <section class="upcoming-cruises"> 
           <div class="upcoming-cruises__wrapper">
             <h2 class="upcoming-cruises__header">Ближайшие круизы</h2>
-            <div class="upcoming-cruises__list"></div>
+            <ul class="upcoming-cruises__list"></ul>
           </div>
         </section>
         <section class="booking">
@@ -217,11 +215,16 @@
         </div>
       </footer>
     </div>
-    
-    <template id="upcoming-cruises-template" style="display: none">
+
+    <template id="upcoming-cruises-template">
       <div class="upcoming-cruises__item cruis-item"> 
         <div class="cruis-item__image-wrapper">
-          <img class="cruis-item__image" src="img/content/astoria-desktop.png" width="260" height="386" alt="круиз">
+          <picture>
+            <source class="cruis-item__image--mobile-webp" type="image/webp" media="(min-width: 767px)" srcset="img/content/astoria-mobile.webp, img/content/astoria-mobile@2x.webp 2x">
+            <source class="cruis-item__image--tablet-webp" type="image/webp" media="(min-width: 1365px)" srcset="img/content/astoria-tablet.webp, img/content/astoria-tablet@2x.webp 2x">
+            <source class="cruis-item__image--webp" type="image/webp" srcset="img/content/astoria-desktop.webp, img/content/astoria-desktop@2x.webp 2x">
+            <img class="cruis-item__image" src="img/content/astoria-desktop.png" width="260" height="386" alt="Круиз">
+          </picture>
           <h3 class="cruis-item__header cruis-item__header--main-screen">Круиз “Астория”</h3>
         </div>
         <div class="cruis-item__description">

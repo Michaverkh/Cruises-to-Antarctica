@@ -112,9 +112,7 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js);
 
-const start = gulp.series(build, syncServer);
 
 // Optional tasks
 //---------------------------------
@@ -126,11 +124,12 @@ const start = gulp.series(build, syncServer);
 // root = 'content/' - webp добавляются и обновляются только в source/img/content/
 
 const createWebp = () => {
-  const root = 'content';
-  return gulp.src(`source/img/${root}**/*.{png,jpg}`)
+  return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({quality: 90}))
-    .pipe(gulp.dest(`source/img/${root}`));
-};
+    .pipe(gulp.dest("build/img"))
+}
+
+exports.createWebp = createWebp;
 
 const optimizeImages = () => {
   return gulp.src('build/img/**/*.{png,jpg}')
@@ -142,6 +141,12 @@ const optimizeImages = () => {
 };
 
 exports.imagemin = optimizeImages;
-exports.webp = createWebp;
+
+const build = gulp.series(clean, svgo, copy, css, sprite, js, createWebp);
+
+const start = gulp.series(build, syncServer);
+
+// exports.webp = createWebp;
 exports.start = start;
 exports.build = build;
+
