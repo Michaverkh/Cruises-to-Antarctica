@@ -16,7 +16,7 @@
         background: url("../img/decorative/form-background-tablet.png") center no-repeat;
         background-size: cover;
         background-color: $whisper;
-    
+
         @media (min-resolution: 2dppx) {
           background: url("../img/decorative/form-background-tablet@2x.png") center no-repeat;
           background-size: cover;
@@ -29,7 +29,7 @@
         background: url("../img/decorative/form-background-mobile.png") center no-repeat;
         background-size: cover;
         background-color: $whisper;
-    
+
         @media (min-resolution: 2dppx) {
           background: url("../img/decorative/form-background-mobile@2x.png") center no-repeat;
           background-size: cover;
@@ -56,57 +56,53 @@
         margin: 0 auto;
         padding: 0;
     }
+}
+
+.booking__description h2 {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 5px;
+    letter-spacing: 0.02em;
+
+    @include tablet {
+        text-align: center;
+        margin-bottom: 5px;
+        font-size: 34px;
+        line-height: 51px;
+    }
 
     @include mobile {
-        
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 15px;
     }
+}
 
-    & h2 {
-        display: block;
-        margin: 0;
-        padding: 0;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 60px;
-        margin-bottom: 5px;
-        letter-spacing: 0.02em;
+.booking__description p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    width: 352px;
 
-        @include tablet {
-            text-align: center;
-            margin-bottom: 5px;
-            font-size: 34px;
-            line-height: 51px;
-        }
-
-        @include mobile {
-            font-size: 24px;
-            line-height: 31px;
-            margin-bottom: 15px;
-        }
-    }
-
-    & p {
-        display: block;
-        margin: 0;
-        padding: 0;
+    @include tablet {
+        text-align: center;
         font-size: 18px;
-        font-weight: 400;
-        line-height: 27px;
-        width: 352px;
+        margin: 0 auto 50px auto;
+        width: auto;
+    }
 
-        @include tablet {
-            text-align: center;
-            font-size: 18px;
-            margin: 0 auto 50px auto;
-            width: auto;
-        }
-
-        @include mobile {
-            text-align: center;
-            margin: 0 auto 33px auto;
-            font-size: 16px;
-            line-height: 22px;
-        }
+    @include mobile {
+        text-align: center;
+        margin: 0 auto 33px auto;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 

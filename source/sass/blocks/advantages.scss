@@ -16,7 +16,7 @@
         background: url("../img/decorative/advantages-tablet.png") center no-repeat;
         background-size: cover;
         background-color: $whisper;
-    
+
         @media (min-resolution: 2dppx) {
           background: url("../img/decorative/advantages-tablet@2x.png") center no-repeat;
           background-size: cover;
@@ -29,7 +29,7 @@
         background: url("../img/decorative/advantages-mobile.png") center no-repeat;
         background-size: cover;
         background-color: $whisper;
-    
+
         @media (min-resolution: 2dppx) {
           background: url("../img/decorative/advantages-mobile@2x.png") center no-repeat;
           background-size: cover;
@@ -38,7 +38,7 @@
     }
 }
 
-.advantages__header {
+.advantages h2 {
     margin: 0;
     padding: 0;
     font-size: 28px;

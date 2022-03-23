@@ -37,7 +37,7 @@
     }
 }
 
-.contacts__text {
+.contacts__content p {
     display: block;
     margin: 0;
     padding: 0;
@@ -59,17 +59,17 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    
+
     &:not(:last-child) {
         margin-bottom: 23px;
     }
+}
 
-    & p {
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        line-height: 24px;
-    }
+.contacts__contact p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .contacts__contact.contacts__contact--adress {
@@ -83,15 +83,17 @@
     line-height: 24px;
 
     @include tablet {
-        
+
     }
 }
 
-.contacts__icon {
+.contacts__contact--phone svg {
     margin-right: 10px;
 }
 
-.contacts__icon--map {
+.contacts__contact--adress svg {
+  margin-right: 10px;
+
     @include tablet {
         margin-top: 5px;
         width: 27px;

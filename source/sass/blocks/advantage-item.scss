@@ -15,39 +15,38 @@
             margin-bottom: 30px;
         }
     }
+}
 
-    & h3 {
-        margin: 0;
-        padding: 0;
-        display: block;
-        font-family: Montserrat;
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 27px;
-        margin-bottom: 8px;
+.advantage-item h3 {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    margin-bottom: 8px;
 
-        @include tablet {
-            line-height: 25px;
-            margin-bottom: 10px;
-        }
-
-        @include tablet {
-            width: 180px;
-        }
+    @include tablet {
+        line-height: 25px;
+        margin-bottom: 10px;
     }
 
-    & p {
-        margin: 0;
-        padding: 0;
-
-        @include tablet {
-            font-size: 14px;
-            line-height: 19.6px;
-        }
+    @include tablet {
+        width: 180px;
     }
 }
 
-.advantage-item__icon {
+.advantage-item p {
+  margin: 0;
+  padding: 0;
+
+  @include tablet {
+      font-size: 14px;
+      line-height: 19.6px;
+  }
+}
+
+.advantage-item svg {
     margin-bottom: 14px;
 
     @include tablet {
@@ -55,7 +54,7 @@
     }
 }
 
-.advantage-item__icon--ship {
+.advantage-item--ship svg {
 
     @include tablet {
         width: 22px;
@@ -63,7 +62,7 @@
     }
 }
 
-.advantage-item__icon--mark {
+.advantage-item--mark svg {
     width: 38px;
     height: auto;
     padding: 4px 0 5px 0;
@@ -74,7 +73,7 @@
     }
 }
 
-.advantage-item__icon--boat {
+.advantage-item--boat svg {
     width: 45px;
     height: auto;
     padding: 7px 0 8px 0;

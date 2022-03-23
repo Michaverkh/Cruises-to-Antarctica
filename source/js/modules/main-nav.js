@@ -1,6 +1,6 @@
 const navMain = document.querySelector(".main-nav");
 const navToggle = document.querySelector(".main-nav__toggle");
-const logo = document.querySelector(".page-header__img");
+const logo = document.querySelector(".page-header__logo");
 
 const openMenu = function() {
   navMain.classList.remove("main-nav--nojs");

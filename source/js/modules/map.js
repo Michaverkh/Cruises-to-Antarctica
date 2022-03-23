@@ -1,4 +1,4 @@
-// 59.93859, 30.32269
+
 import './leaflet';
 
 const HOME_POSITION = {
@@ -12,7 +12,7 @@ export const initMap = function () {
       lat: 59.93859,
       lng: 30.32269,
     }, 12);
-  
+
     L.tileLayer(
       'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       {
@@ -25,7 +25,7 @@ export const initMap = function () {
         iconSize: [18, 22],
         iconAnchor: [9, 22],
       });
-      
+
       const MainMarker = L.marker(
         HOME_POSITION,
         {
@@ -33,6 +33,6 @@ export const initMap = function () {
           icon: mainPinIcon,
         },
       );
-      
+
       MainMarker.addTo(map);
-} 
+}

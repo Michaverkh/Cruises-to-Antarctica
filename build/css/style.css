@@ -1563,7 +1563,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   min-height: 61.8px;
 }
 
-.page-header__img {
+.page-header__logo svg {
   width: 70px;
   height: 38px;
 }
@@ -1607,7 +1607,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   margin-top: 10px;
 }
 
-.trip__image {
+.trip__image-wrapper img {
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -1650,7 +1650,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   cursor: pointer;
 }
 
-.page-footer__img {
+.page-footer__logo svg {
   width: 70px;
   height: 38px;
   margin-right: 40px;
@@ -1691,7 +1691,6 @@ svg.leaflet-image-layer.leaflet-interactive path {
   margin: 0;
   padding: 0;
   display: block;
-  font-family: Montserrat;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
@@ -1703,17 +1702,17 @@ svg.leaflet-image-layer.leaflet-interactive path {
   padding: 0;
 }
 
-.advantage-item__icon {
+.advantage-item svg {
   margin-bottom: 14px;
 }
 
-.advantage-item__icon--mark {
+.advantage-item--mark svg {
   width: 38px;
   height: auto;
   padding: 4px 0 5px 0;
 }
 
-.advantage-item__icon--boat {
+.advantage-item--boat svg {
   width: 45px;
   height: auto;
   padding: 7px 0 8px 0;
@@ -1728,7 +1727,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background-color: #E5E5E5;
 }
 
-.advantages__header {
+.advantages h2 {
   margin: 0;
   padding: 0;
   font-size: 28px;
@@ -1765,7 +1764,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   padding: 0 8.5%;
 }
 
-.upcoming-cruises__header {
+.upcoming-cruises h2 {
   margin: 0;
   padding: 0;
   display: block;
@@ -1939,7 +1938,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background-color: #011C40;
 }
 
-.form__header {
+.form h3 {
   padding: 0;
   margin: 0 auto;
   font-size: 18px;
@@ -1966,7 +1965,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   margin-bottom: 28px;
 }
 
-.form__input {
+.form__field-item input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 100%;
@@ -1975,55 +1974,69 @@ svg.leaflet-image-layer.leaflet-interactive path {
   padding: 14px 16px 13px 16px;
 }
 
-.form__input::-webkit-input-placeholder {
+.form__field-item input::-webkit-input-placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #011C40;
 }
 
-.form__input::-moz-placeholder {
+.form__field-item input::-moz-placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #011C40;
 }
 
-.form__input:-ms-input-placeholder {
+.form__field-item input:-ms-input-placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #011C40;
 }
 
-.form__input::-ms-input-placeholder {
+.form__field-item input::-ms-input-placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #011C40;
 }
 
-.form__input::placeholder {
+.form__field-item input::placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #011C40;
 }
 
-.form__input:focus,
-.form__input:active {
+.form__field-item input:focus,
+.form__field-item input:active {
   outline: none;
   border: none;
 }
 
-.form__checkbox-label {
+.form__field-item--text label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+.form__field-item--checkbox label {
   font-size: 10px;
   font-weight: 400;
   line-height: 13px;
   color: #F9FBFD;
 }
 
-.form__checkbox-label::before {
+.form__field-item--checkbox label::before {
   content: "";
   position: absolute;
   width: 18px;
@@ -2033,7 +2046,21 @@ svg.leaflet-image-layer.leaflet-interactive path {
   background-color: #F9FBFD;
 }
 
-.form__checkbox-input:checked + .form__checkbox-label::before {
+.form__field-item--checkbox input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+}
+
+.form__field-item--checkbox input:checked + label::before {
   background: url("../../img/sprite/mark-form.svg") center no-repeat;
   background-color: #F9FBFD;
 }
@@ -2068,7 +2095,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
   padding: 78px 0 0 0;
 }
 
-.contacts__text {
+.contacts__content p {
   display: block;
   margin: 0;
   padding: 0;
@@ -2106,7 +2133,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
   line-height: 24px;
 }
 
-.contacts__icon {
+.contacts__contact--phone svg {
+  margin-right: 10px;
+}
+
+.contacts__contact--adress svg {
   margin-right: 10px;
 }
 
@@ -2172,7 +2203,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding-top: 24px;
   }
 
-  .page-header__img {
+  .page-header__logo svg {
     width: 38px;
     height: 20px;
   }
@@ -2203,7 +2234,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding-bottom: 50px;
   }
 
-  .page-footer__img {
+  .page-footer__logo svg {
     width: 38px;
     height: 20px;
     margin-right: 25px;
@@ -2213,17 +2244,17 @@ svg.leaflet-image-layer.leaflet-interactive path {
     width: 87px;
   }
 
-  .page-footer__icon--fb {
+  .page-footer__social-link--fb svg {
     width: 9px;
     height: auto;
   }
 
-  .page-footer__icon--inst {
+  .page-footer__social-link--inst svg {
     width: 16px;
     height: auto;
   }
 
-  .page-footer__icon--tw {
+  .page-footer__social-link--tw svg {
     width: 16px;
     height: auto;
   }
@@ -2246,21 +2277,21 @@ svg.leaflet-image-layer.leaflet-interactive path {
     line-height: 19.6px;
   }
 
-  .advantage-item__icon {
+  .advantage-item svg {
     margin-bottom: 15px;
   }
 
-  .advantage-item__icon--ship {
+  .advantage-item--ship svg {
     width: 22px;
     height: auto;
   }
 
-  .advantage-item__icon--mark {
+  .advantage-item--mark svg {
     width: 34px;
     padding: 4px 0 5px 0;
   }
 
-  .advantage-item__icon--boat {
+  .advantage-item--boat svg {
     width: 40px;
     padding: 7px 0 8px 0;
   }
@@ -2272,7 +2303,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     background-color: #E5E5E5;
   }
 
-  .advantages__header {
+  .advantages h2 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 49px;
@@ -2293,7 +2324,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding: 0 7.8%;
   }
 
-  .upcoming-cruises__header {
+  .upcoming-cruises h2 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -2356,7 +2387,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding: 65px 0 0 0;
   }
 
-  .contacts__text {
+  .contacts__content p {
     margin-bottom: 26px;
   }
 
@@ -2366,7 +2397,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     align-items: flex-start;
   }
 
-  .contacts__icon--map {
+  .contacts__contact--adress svg {
     margin-top: 5px;
     width: 27px;
     height: 22px;
@@ -2500,12 +2531,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding-top: 6px;
   }
 
-  .page-header__img {
+  .page-header__logo svg {
     width: 42px;
     height: 22px;
   }
 
-  .page-header__img.main-nav--opened {
+  .page-header__logo.main-nav--opened svg {
     position: absolute;
     top: 20px;
     right: 228px;
@@ -2513,7 +2544,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     z-index: 3;
   }
 
-  .page-header__img.main-nav--opened path {
+  .page-header__logo.main-nav--opened svg path {
     fill: #011C40;
   }
 
@@ -2545,20 +2576,20 @@ svg.leaflet-image-layer.leaflet-interactive path {
     display: block;
   }
 
-  .page-footer__img {
+  .page-footer__logo svg {
     width: 42px;
     height: 22px;
   }
 
-  .page-footer__icon--fb {
+  .page-footer__social-link--fb svg {
     width: 9px;
   }
 
-  .page-footer__icon--inst {
+  .page-footer__social-link--inst svg {
     width: 16px;
   }
 
-  .page-footer__icon--tw {
+  .page-footer__social-link--tw svg {
     width: 14px;
   }
 
@@ -2573,7 +2604,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     background-color: #E5E5E5;
   }
 
-  .advantages__header {
+  .advantages h2 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 30px;
@@ -2592,7 +2623,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding: 0 7.5%;
   }
 
-  .upcoming-cruises__header {
+  .upcoming-cruises h2 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 30px;
@@ -2647,18 +2678,18 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding: 35px 30px 35px 30px;
   }
 
-  .form__header span {
-    display: block;
-  }
-
-  .form__header {
+  .form h3 {
     width: 214px;
     text-align: center;
     line-height: 25px;
     margin-bottom: 27px;
   }
 
-  .form__checkbox-label {
+  .form span {
+    display: block;
+  }
+
+  .form__field-item--checkbox label {
     display: block;
     font-size: 10px;
     line-height: 10px;
@@ -2684,11 +2715,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
     padding: 0;
   }
 
-  .contacts__text {
+  .contacts__content p {
     margin-bottom: 26px;
   }
 
-  .contacts__icon--map {
+  .contacts__contact--adress svg {
     margin-top: 7px;
     width: 27px;
     height: 22px;

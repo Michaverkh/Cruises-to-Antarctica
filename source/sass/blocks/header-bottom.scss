@@ -9,50 +9,50 @@
     @include mobile {
         padding: 115px 0 180px 0;
     }
+}
 
-    & h1 {
-        margin: 0;
-        padding: 0;
-        font-family: $ff-montserrat;
-        font-size: 54px;
-        font-weight: 700;
-        line-height: 66px;
-        color: $alice-blue;
+.header-bottom h1 {
+    margin: 0;
+    padding: 0;
+    font-family: $ff-montserrat;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 66px;
+    color: $alice-blue;
+    margin-bottom: 12px;
+    letter-spacing: 0.04em;
+
+    @include tablet {
+        font-size: 50px;
+        line-height: 61px;
         margin-bottom: 12px;
-        letter-spacing: 0.04em;
-
-        @include tablet {
-            font-size: 50px;
-            line-height: 61px;
-            margin-bottom: 12px;
-        }
-
-        @include mobile {
-            display: block;
-            font-size: 36px;
-            line-height: 45px;
-            margin-bottom: 10px;
-        }
     }
 
-    & p {
-        margin: 0;
-        padding: 0;
-        font-size: 20px;
-        line-height: 24px;
-        color: $alice-blue;
+    @include mobile {
+        display: block;
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 10px;
+    }
+}
 
-        @include tablet {
-            font-size: 18px;
-            line-height: 22px;
-        }
+.header-bottom p {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: $alice-blue;
 
-        @include mobile {
-            display: block;
-            width: 200px;
-            font-size: 16px;
-            line-height: 22px;
-        }
+    @include tablet {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    @include mobile {
+        display: block;
+        width: 200px;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 

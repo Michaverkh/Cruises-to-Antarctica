@@ -14,7 +14,7 @@
   }
 }
 
-.page-header__img {
+.page-header__logo svg {
   width: 70px;
   height: 38px;
 
@@ -30,13 +30,13 @@
 }
 
 @include mobile {
-  .page-header__img.main-nav--opened {
+  .page-header__logo.main-nav--opened svg{
     position: absolute;
     top: 20px;
     right: 228px;
     margin-left: 25px;
     z-index: 3;
-  
+
     & path {
       fill: $tangaroa;
     }
